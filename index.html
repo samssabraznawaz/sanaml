@@ -257,7 +257,6 @@
       <a href="#parts">What it does</a>
       <a href="#manual">Manual</a>
       <a href="#developer">Developer</a>
-      <a href="https://sanapls.com/">SaNaPLS suite</a>
     </nav>
   </header>
 
@@ -269,20 +268,21 @@
       <a class="btn primary" href="/sanaml/ml/">Open SaNaML →</a>
       <a class="btn outline" href="/sanaml/ml/#/data">Try the teaching data</a>
     </div>
-    <p class="cta-note">Version 0.9.2 · No account. No install. No data leaves your device.</p>
+    <p class="cta-note">Version 0.10.0 · No account. No install. No data leaves your device.</p>
   </section>
 
   <section id="parts">
     <p class="kicker">What it does</p>
-    <h2>Eight parts, from your data file to your Word report</h2>
+    <h2>Nine parts, from your data file to your Word report</h2>
     <div class="parts">
-      <article class="part"><span class="tag">Start here</span><h3>Data and construct scores</h3><p>Open a CSV, Excel or SPSS file (or the built-in teaching data), check the variable types, build construct scores with Cronbach’s α, or bring latent variable scores from SaNaPLS.</p><a class="go" href="/sanaml/ml/#/data">Open your data →</a></article>
+      <article class="part"><span class="tag">Start here</span><h3>Data and construct scores</h3><p>Open a CSV, Excel or SPSS file (or the built-in teaching data), check the variable types, build construct scores with Cronbach’s α, or open the latent variable scores exported from your PLS-SEM software.</p><a class="go" href="/sanaml/ml/#/data">Open your data →</a></article>
       <article class="part"><span class="tag">Recommended first</span><h3>Data quality screening</h3><p>Careless responding (longstring, response variability, Mahalanobis distance, even–odd consistency, response time), outliers, missing-data patterns and Little’s MCAR test. You decide whom to exclude.</p><a class="go" href="/sanaml/ml/#/data">Screen your data →</a></article>
       <article class="part"><span class="tag">Common statistical analysis</span><h3>Tests with plain-language results</h3><p>Descriptives, t-tests, one-way, factorial and repeated-measures ANOVA, ANCOVA, MANOVA, non-parametric tests, chi-square, Fisher and McNemar tests, correlation, linear and logistic regression, and a guide that helps you choose.</p><a class="go" href="/sanaml/ml/#/analyses">Open the analyses →</a></article>
+      <article class="part"><span class="tag">See your data</span><h3>Charts</h3><p>Histograms, box plots, means with confidence intervals, scatter plots with a fitted line, correlation heatmaps and bar charts of percentages, each with a plain-language description and a caption for your report.</p><a class="go" href="/sanaml/ml/#/charts">Draw a chart →</a></article>
+      <article class="part"><span class="tag">Marketing and segmentation</span><h3>Cluster analysis</h3><p>Find groups of similar respondents (for example customer segments) with k-means or hierarchical clustering. SaNaML compares 2 to 10 clusters by silhouette, gap statistic and stability, describes each cluster, and compares the clusters on other variables.</p><a class="go" href="/sanaml/ml/#/cluster">Find the groups →</a></article>
       <article class="part"><span class="tag">No data needed</span><h3>Power analysis and sample size</h3><p>A priori, post hoc and sensitivity analyses for regression, t-tests, ANOVA, chi-square and correlation, and the inverse square root method for PLS-SEM, with a sentence ready for your proposal.</p><a class="go" href="/sanaml/ml/#/power">Plan your sample →</a></article>
       <article class="part"><span class="tag">Explainable AI</span><h3>Machine learning</h3><p>Compare linear models, elastic net, decision trees, random forest, XGBoost and LightGBM on respondents they never saw (nested cross-validation), then explain the best model with SHAP, permutation importance and accumulated local effects, and check calibration and prediction intervals.</p><a class="go" href="/sanaml/ml/#/ml">Predict and explain →</a></article>
-      <article class="part"><span class="tag">For SaNaPLS users</span><h3>PLS-SEM link</h3><p>Benchmark your structural model against machine learning, test curved effects and interactions, check paths with double machine learning, and draw importance–performance maps from a SaNaPLS results file.</p><a class="go" href="/sanaml/ml/#/pls">Test your PLS-SEM model →</a></article>
-      <article class="part"><span class="tag">For SaNaPLS users</span><h3>Heterogeneity</h3><p>Segmentation trees of the structural model, causal forests for one path, and latent profile analysis: find groups of respondents for whom the model works differently.</p><a class="go" href="/sanaml/ml/#/hetero">Find groups →</a></article>
+      <article class="part"><span class="tag">After PLS-SEM</span><h3>Latent variable scores</h3><p>Ran PLS-SEM elsewhere? Export the latent variable scores (one row per respondent, one column per construct) as a CSV or Excel file, open it here, and use machine learning to see whether flexible models predict your outcome better than the linear model, and which constructs drive it and how.</p><a class="go" href="/sanaml/ml/#/data">Open your scores →</a></article>
       <article class="part"><span class="tag">Every result</span><h3>Word report</h3><p>Every result has a ready APA-style sentence, the checks with their rules and sources, and numbered tables. Collect the results you want and download them as one Word document.</p><a class="go" href="/sanaml/ml/#/report">Open the report →</a></article>
     </div>
   </section>
@@ -305,10 +305,11 @@
       <li><a href="/sanaml/manuals/SaNaML-User-Manual-0.9.2.pdf">SaNaML user manual (PDF)</a> — every screen, step by step, with the worked examples.</li>
       <li>Example files used in the manual:
         <a href="/sanaml/examples/careless_demo.csv" download>careless_demo.csv</a> (data quality screening),
-        <a href="/sanaml/examples/utaut_items_demo.csv" download>utaut_items_demo.csv</a> and
-        <a href="/sanaml/examples/utaut.sanahandoff" download>utaut.sanahandoff</a> (PLS-SEM link and heterogeneity).
+        <a href="/sanaml/examples/utaut_items_demo.csv" download>utaut_items_demo.csv</a> (survey items and construct scores) and
+        <a href="/sanaml/examples/lv_scores_demo.csv" download>lv_scores_demo.csv</a> (latent variable scores of a PLS-SEM model, for machine learning) and
+        <a href="/sanaml/examples/segments_demo.csv" download>segments_demo.csv</a> (simulated shopper survey with three segments, for cluster analysis and charts).
         The teaching data are built in: <em>Data → Try the teaching data</em>.</li>
-      <li>Analysing a PLS-SEM model? Estimate it in <a href="https://sanapls.com/">SaNaPLS</a> and bring its results here with a .sanahandoff file.</li>
+      <li>Coming from PLS-SEM? Export the latent variable scores from your PLS-SEM software as a CSV or Excel file and open it on the Data screen; then go to Machine learning.</li>
     </ul>
   </section>
 
@@ -350,7 +351,7 @@
     <footer class="site">
     <div class="row">
       <span>© 2026 Prof. S. Sabraz Nawaz and Prof. Ghazanfar Ali. All rights reserved. No charge while SaNaML is in its testing phase.</span>
-      <span><a href="mailto:sabraz@seu.ac.lk?subject=SaNaML%20feedback">Send feedback</a> · <a href="https://sanapls.com/">SaNaPLS suite</a> · <a href="/sanaml/ml/#/notices">Third-party notices</a></span>
+      <span><a href="mailto:sabraz@seu.ac.lk?subject=SaNaML%20feedback">Send feedback</a> · <a href="/sanaml/ml/#/notices">Third-party notices</a></span>
     </div>
   </footer>
 </div>
