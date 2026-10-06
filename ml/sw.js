@@ -1,6 +1,6 @@
 /* SaNaML service worker (generated at build time from src/sw-template.js). Works offline after the first visit. */
-const CACHE = 'sanaml-da33fcfe6034';
-const FILES = ["assets/check.worker-Blje9Lgl.js","assets/index-ALQBn_yz.css","assets/index-DywuPqRl.js","assets/lightgbm-CoV27Mzo.wasm","assets/ml.worker-DRJpuhaq.js","assets/xgboost-DIaTZYvc.wasm","favicon.svg","./","licenses/dmlc-core-LICENSE.txt","licenses/eigen-MPL-2.0.txt","licenses/fast_double_parser-LICENSE.BSL.txt","licenses/fast_double_parser-LICENSE.txt","licenses/fmt-LICENSE.txt","licenses/lightgbm-LICENSE.txt","licenses/xgboost-LICENSE.txt"];
+const CACHE = 'sanaml-1bee7fdd1b3a';
+const FILES = ["assets/check.worker-Blje9Lgl.js","assets/index-CNrMp4Qw.css","assets/index-Dc63TDNW.js","assets/lightgbm-CoV27Mzo.wasm","assets/ml.worker-DRJpuhaq.js","assets/xgboost-DIaTZYvc.wasm","favicon.svg","./","licenses/dmlc-core-LICENSE.txt","licenses/eigen-MPL-2.0.txt","licenses/fast_double_parser-LICENSE.BSL.txt","licenses/fast_double_parser-LICENSE.txt","licenses/fmt-LICENSE.txt","licenses/lightgbm-LICENSE.txt","licenses/xgboost-LICENSE.txt"];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES.map((f) => new URL(f, self.registration.scope)))).then(() => self.skipWaiting()));
